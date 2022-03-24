@@ -48,16 +48,16 @@
 
 
        # Calculation with greater than less than
-temp = int(input('enter the current temperature: '))
-hot = temp > 30
-cold = temp < 10
+# temp = int(input('enter the current temperature: '))
+# hot = temp > 30
+# cold = temp < 10
 
-if hot:
-    print("It's a hot day")
-elif cold:
-    print("It's a cold day")
-else:
-    print("It's neither hot nor cold")
+# if hot:
+#     print("It's a hot day")
+# elif cold:
+#     print("It's a cold day")
+# else:
+#     print("It's neither hot nor cold")
 
 
                 # Assignment
@@ -67,5 +67,24 @@ else:
 #     password length must not be greater than 10 characters
 # otherwise
 #     password is set    
+
+
+                # Calculation for number of characters in password 
+
+password = input('enter your password')
+pwdCheck = True
+
+while pwdCheck:
+    if (len(password) < 8):
+        print("password length must be greater then 8 characters")
+        break
+    elif (len(password) > 10):
+        print("password length must be greater than 10 characters")
+        break
+    else:
+        print("your password is successfully set")
+        break
+    
+
     
     
